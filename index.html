@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria</title>
+</head>
+<body>
+    <h1>Faça seu Pedido</h1>
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" placeholder="Digite seu nome">
+    
+    <h3>Tamanho da Pizza</h3>
+    <input type="radio" id="pequena" name="tamanho" value="pequena">
+    <label for="pequena">Pequena - R$ 25,00</label><br>
+    <input type="radio" id="media" name="tamanho" value="media">
+    <label for="media">Média - R$ 35,00</label><br>
+    <input type="radio" id="grande" name="tamanho" value="grande">
+    <label for="grande">Grande - R$ 50,00</label><br>
+
+    <h3>Adicionais (R$ 5,00 cada)</h3>
+    <input type="checkbox" id="bacon" name="adicionais" value="bacon">
+    <label for="bacon">Bacon</label><br>
+    <input type="checkbox" id="queijo" name="adicionais" value="queijo">
+    <label for="queijo">Queijo</label><br>
+    <input type="checkbox" id="cebola" name="adicionais" value="cebola">
+    <label for="cebola">Cebola</label><br>
+
+    <button onclick="fazerPedido()">Fazer Pedido</button>
+    <h2>R$ <strong>00</strong>,00</h2>
+
+    <script src="index.js"></script>
+</body>
+</html>
